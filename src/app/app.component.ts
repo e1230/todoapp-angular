@@ -9,12 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  welcome = 'Hola UWU';
-  tasks = [
-    'Instalar el Angular CLI',
-    'Crear proyecto',
-    'Crear componentes',
-    'Ver Angular',
-    'Ver flutter',
-  ];
+  title = 'todo-app';
 }
