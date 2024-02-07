@@ -22,4 +22,12 @@ export class LabsComponent {
     disabled: true,
     img: 'https://w3schools.com/howto/img_avatar.png',
   };
+
+  clickHandler() {
+    alert('Hola UwU');
+  }
+
+  inputHandler(event: Event) {
+    console.log(event);
+  }
 }
