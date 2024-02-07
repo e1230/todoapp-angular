@@ -16,6 +16,10 @@ export class LabsComponent {
     'Ver Angular',
     'Ver flutter',
   ];
-  name = 'Edgar';
-  edad = 24;
+  person = {
+    name: 'Edgar',
+    edad: 24,
+    disabled: true,
+    img: 'https://w3schools.com/howto/img_avatar.png',
+  };
 }

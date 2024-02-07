@@ -7,4 +7,8 @@
 <hr />
 <h2>{{ "Hola".repeat(4) }}</h2>
 <p>la suma de 3 + 3 es: {{ 3 + 3 }}</p>
-<p>Soy {{ name }} y tengo {{ edad }} años uwu</p>
+<p>Soy {{ person.name }} y tengo {{ person.edad }} años uwu</p>
+<img [src]="person.img" alt="no-image" />
+<input type="text" [value]="person.name" />
+<button [disabled]="person.disabled">Clickeame UwU</button>
+<hr />
