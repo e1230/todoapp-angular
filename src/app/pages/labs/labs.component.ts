@@ -16,4 +16,6 @@ export class LabsComponent {
     'Ver Angular',
     'Ver flutter',
   ];
+  name = 'Edgar';
+  edad = 24;
 }
