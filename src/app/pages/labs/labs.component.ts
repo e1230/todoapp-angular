@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-labs',
@@ -16,6 +16,7 @@ export class LabsComponent {
     'Ver Angular',
     'Ver flutter',
   ];
+  senal = signal('Edgar');
   person = {
     name: 'Edgar',
     edad: 24,
@@ -32,6 +33,9 @@ export class LabsComponent {
   }
   keydownHandler(event: KeyboardEvent) {
     const input = event.target as HTMLInputElement;
+    const newValue = input.value;
+
+    this.senal.set(newValue);
     console.log(input.value);
   }
 }
