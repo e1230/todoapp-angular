@@ -9,13 +9,13 @@ import { CommonModule } from '@angular/common';
 })
 export class LabsComponent {
   welcome = 'Hola UWU';
-  tasks = [
+  tasks = signal([
     'Instalar el Angular CLI',
     'Crear proyecto',
     'Crear componentes',
     'Ver Angular',
     'Ver flutter',
-  ];
+  ]);
   senal = signal('Edgar');
   person = {
     name: 'Edgar',
